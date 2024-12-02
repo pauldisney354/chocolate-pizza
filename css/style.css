@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  color: #5a3e36;
+}
+
+header .subtitle {
+  font-size: 1.2rem;
+  color: #888;
+  margin: 5px 0;
+}
+
+header hr {
+  border: 1px solid #ddd;
+  margin: 10px auto;
+  width: 80%;
+}
+
+header .date,
+header .author {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Main Section */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recipe-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Ingredients Section */
+.ingredients h2,
+.steps h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #5a3e36;
+}
+
+.ingredients ul {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.ingredients ul li {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Steps Section */
+.steps ol {
+  list-style: decimal;
+  margin-left: 20px;
+}
+
+.steps ol li {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Notes Section */
+.notes {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-left: 5px solid #5a3e36;
+  border-radius: 5px;
+}
+
+.notes h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #5a3e36;
+}
+
+.notes p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons img {
+  width: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  .notes {
+    font-size: 0.9rem;
+  }
+}
