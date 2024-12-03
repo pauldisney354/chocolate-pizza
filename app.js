@@ -1,23 +1,17 @@
-// Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('JavaScript is connected!');
+  console.log('JavaScript loaded');
 
-  // Add interactivity to checkboxes
+  // Checkbox functionality
   const checkboxes = document.querySelectorAll('.ingredients input[type="checkbox"]');
-
-  checkboxes.forEach((checkbox) => {
+  checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
-      // Log which checkbox was clicked
-      console.log(`${checkbox.value} was ${checkbox.checked ? 'checked' : 'unchecked'}`);
+      console.log(`${checkbox.checked ? 'Checked' : 'Unchecked'}`);
     });
   });
 
-  // Example feature: Add a toggle for light/dark mode
-  const toggleButton = document.querySelector('#theme-toggle');
-  if (toggleButton) {
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      console.log('Dark mode toggled!');
-    });
-  }
+  // Print button functionality
+  const printButton = document.querySelector('.print-button');
+  printButton.addEventListener('click', () => {
+    window.print();
+  });
 });

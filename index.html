@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chocolate Pizza</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <!-- Header Section -->
   <header>
-    <img src="img/logo.png" alt="Site Logo" class="logo">
-    <h1>Chocolate Pizza</h1>
-    <p class="subtitle">Deliciousness to Share</p>
-    <hr>
-    <p class="date">December 2, 2024</p>
-    <p class="author">Written by John Doe</p>
+    <div class="logo">
+      <h1>Delicious</h1>
+      <p>The best food blog on the web</p>
+    </div>
+    <nav class="social-icons">
+      <img src="img/facebook.png" alt="Facebook">
+      <img src="img/twitter.png" alt="Twitter">
+      <img src="img/pinterest.png" alt="Pinterest">
+      <img src="img/rss.png" alt="RSS">
+      <img src="img/email.png" alt="Email">
+    </nav>
   </header>
 
-  <!-- Main Content Section -->
   <main>
-    <!-- Recipe Image -->
-    <section class="recipe-image">
-      <img src="img/chocolate-pizza.png" alt="Chocolate Pizza Image">
+    <section class="title">
+      <h2>Chocolate Pizza</h2>
+      <p>Posted on 15 Dec 2013 / Desserts</p>
+      <button class="print-button">Print</button>
     </section>
 
-    <!-- Ingredients Section -->
+    <section class="image">
+      <img src="img/chocolate-pizza.jpg" alt="Chocolate Pizza">
+    </section>
+
+    <section class="description">
+      <p>For the fig-swirl: Melt butter over medium heat in a saucepan...</p>
+      <p>Using an ice cream machine, pour liquids into the frozen basin...</p>
+    </section>
+
     <section class="ingredients">
-      <h2>Ingredients</h2>
       <ul>
-        <li>1 cup sugar</li>
-        <li>2 cups flour</li>
-        <li>1/2 cup cocoa powder</li>
-        <li>1 tsp baking soda</li>
-        <li>1/2 tsp salt</li>
-        <!-- Add more ingredients as needed -->
+        <li><input type="checkbox"> 1 1/2 cups milk</li>
+        <li><input type="checkbox"> 1/2 cup mascarpone</li>
+        <li><input type="checkbox"> 1/2 tsp pink salt</li>
+        <li><input type="checkbox"> 1 lb Black Mission Figs</li>
+        <li><input type="checkbox"> 2-4 tbsp water</li>
+        <!-- Add the remaining ingredients -->
       </ul>
-    </section>
-
-    <!-- Steps Section -->
-    <section class="steps">
-      <h2>Steps</h2>
-      <ol>
-        <li>Preheat oven to 350°F.</li>
-        <li>Mix all dry ingredients in a bowl.</li>
-        <li>Add wet ingredients and stir until smooth.</li>
-        <li>Pour batter into a prepared pan and bake for 25 minutes.</li>
-        <!-- Add more steps as needed -->
-      </ol>
-    </section>
-
-    <!-- Notes Section -->
-    <section class="notes">
-      <h3>Chef's Notes</h3>
-      <p>Feel free to add toppings of your choice like nuts, chocolate chips, or fresh berries!</p>
     </section>
   </main>
 
-  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 Chocolate Pizza. All rights reserved.</p>
-    <div class="social-icons">
-      <img src="img/facebook-icon.png" alt="Facebook">
-      <img src="img/twitter-icon.png" alt="Twitter">
-      <img src="img/instagram-icon.png" alt="Instagram">
+    <div class="author">
+      <img src="img/author.jpg" alt="Vanessa Stevenson">
+      <p>Vanessa Stevenson</p>
+      <p>Food enthusiast, photography fan...</p>
     </div>
+    <p class="copyright">Delicious © 2013 - All Rights Reserved.</p>
+    <p>Proudly published with Ghost.</p>
   </footer>
+  
+  <script src="app.js" defer></script>
 </body>
-
 </html>

@@ -6,147 +6,110 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  padding: 20px;
+  color: #333;
+  padding: 0 20px;
 }
 
 /* Header Section */
 header {
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding: 20px 0;
 }
 
-header .logo {
-  max-width: 100px;
-  display: block;
-  margin: 0 auto;
+header .logo h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-top: 10px;
-  color: #5a3e36;
-}
-
-header .subtitle {
-  font-size: 1.2rem;
+header .logo p {
+  font-size: 12px;
   color: #888;
-  margin: 5px 0;
 }
 
-header hr {
-  border: 1px solid #ddd;
-  margin: 10px auto;
-  width: 80%;
+header .social-icons img {
+  width: 20px;
+  margin: 0 5px;
 }
 
-header .date,
-header .author {
-  font-size: 0.9rem;
-  color: #555;
-  margin: 5px 0;
+/* Title Section */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 }
 
-/* Main Section */
-main {
-  max-width: 800px;
-  margin: 0 auto;
+.title h2 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
-.recipe-image img {
+.title p {
+  color: #aaa;
+}
+
+.print-button {
+  padding: 5px 10px;
+  background: #f0f0f0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Image Section */
+.image img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+}
+
+/* Description Section */
+.description {
+  margin: 20px 0;
 }
 
 /* Ingredients Section */
-.ingredients h2,
-.steps h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #5a3e36;
-}
-
 .ingredients ul {
-  list-style: square;
-  margin-left: 20px;
+  list-style: none;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
 }
 
-.ingredients ul li {
-  margin: 5px 0;
-  font-size: 1rem;
+.ingredients li {
+  margin: 10px 0;
 }
 
-/* Steps Section */
-.steps ol {
-  list-style: decimal;
-  margin-left: 20px;
-}
-
-.steps ol li {
-  margin: 5px 0;
-  font-size: 1rem;
-}
-
-/* Notes Section */
-.notes {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #fff;
-  border-left: 5px solid #5a3e36;
-  border-radius: 5px;
-}
-
-.notes h3 {
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-  color: #5a3e36;
-}
-
-.notes p {
-  font-size: 1rem;
-  color: #555;
+.ingredients input[type="checkbox"] {
+  margin-right: 10px;
 }
 
 /* Footer Section */
 footer {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 2px solid #ddd;
   text-align: center;
-  margin-top: 40px;
+}
+
+footer .author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+footer .author img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
 }
 
 footer p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-footer .social-icons {
-  margin-top: 10px;
-}
-
-footer .social-icons img {
-  width: 30px;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
-}
-
-footer .social-icons img:hover {
-  transform: scale(1.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  main {
-    padding: 0 10px;
-  }
-
-  .notes {
-    font-size: 0.9rem;
-  }
+  color: #888;
+  font-size: 12px;
 }
